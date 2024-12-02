@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1-pulse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="circle"></span>
+            
+            <a href="/" style="color: rgb(0, 0, 0); text-decoration: none;">f1-pulse</a>
+        </div>
+        <nav>
+            <a href="/">home</a>
+            <a href="/oracle">oracle</a>
+            <a>sign in</a>
+            <a href="profile">profile</a>
+            <!-- this profile should only be visible when user signed in -->
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Page-specific content will go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Footer content, if any, goes here -->
+    </footer>
+</body>
+</html>

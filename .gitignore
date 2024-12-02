@@ -1,0 +1,23 @@
+# Random MacOS file
+.DS_Store
+
+# Ignore SQLite database
+*.db
+
+# Python environment files
+.env
+*.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE-specific files
+.vscode/
+.idea/

@@ -1,0 +1,74 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 5% 7%;
+    font-family: 'Source Code Pro', monospace; 
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    text-align: right;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main content styles */
+main {
+    padding: 3% 7%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(13, 13, 13); /* Change color as desired */
+    border-radius: 50%;
+    margin-right: 10px; /* Space between circle and text */
+    position: relative;
+    box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.3); /* Initial shadow */
+}
